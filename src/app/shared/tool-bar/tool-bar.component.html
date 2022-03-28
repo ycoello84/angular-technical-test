@@ -1,0 +1,10 @@
+<div class="boxContainer">
+  <div class="box">
+    <ng-container *ngFor="let item of optionsMenu">
+      <div class="optionsLink">
+        <a [routerLink]="item.linkDir">{{ item.name}}</a>
+      </div>
+    </ng-container>
+
+  </div>
+</div>

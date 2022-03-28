@@ -1,0 +1,34 @@
+<ng-container *ngIf="dataSpecies != null">
+  <div class="containerInfoDetails">
+    <div class="itemsDetails">
+      <strong>Name: </strong> {{ dataSpecies.name }}
+    </div>
+    <div class="itemsDetails">
+      <strong>classification: </strong> {{ dataSpecies.classification }}
+    </div>
+    <div class="itemsDetails">
+      <strong>designation: </strong> {{ dataSpecies.designation }}
+    </div>
+    <div class="itemsDetails">
+      <strong>average_height: </strong> {{ dataSpecies.average_height }}
+    </div>
+    <div class="itemsDetails">
+      <strong>skin_colors: </strong> {{ dataSpecies.skin_colors }}
+    </div>
+    <div class="itemsDetails">
+      <strong>hair_colors: </strong> {{ dataSpecies.hair_colors }}
+    </div>
+
+
+
+
+  </div>
+  <br>
+  <div>
+    <button type="button" class="btn btn-primary" (click)="goBack()">
+      <i class="fa fa-reply-all" aria-hidden="true"></i>
+      Back
+    </button>
+  </div>
+
+</ng-container>

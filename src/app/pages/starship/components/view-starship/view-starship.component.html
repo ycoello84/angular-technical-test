@@ -1,0 +1,30 @@
+<ng-container *ngIf="dataStarship != null">
+  <div class="containerInfoDetails">
+    <div class="itemsDetails">
+      <strong>Name: </strong> {{ dataStarship.name }}
+    </div>
+    <div class="itemsDetails">
+      <strong>Model: </strong> {{ dataStarship.model}}
+    </div>
+    <div class="itemsDetails">
+      <strong>Manufacturer: </strong> {{ dataStarship.manufacturer }}
+    </div>
+    <div class="itemsDetails">
+      <strong>Crew: </strong> {{ dataStarship.crew }}
+    </div>
+    <div class="itemsDetails">
+      <strong>Length: </strong> {{ getTypeLength(dataStarship.length) }}
+    </div>
+
+
+
+  </div>
+  <br>
+  <div>
+    <button type="button" class="btn btn-primary" (click)="goBack()">
+      <i class="fa fa-reply-all" aria-hidden="true"></i>
+      Back
+    </button>
+  </div>
+
+</ng-container>

@@ -1,0 +1,39 @@
+<div *ngIf="dataSelected != null; else existDataSelected">
+  <div class="containerInfoDetails">
+    <div class="itemsDetails">
+      <strong>Title: </strong> {{ dataSelected.title }}
+    </div>
+    <div class="itemsDetails">
+      <strong>Director: </strong>Director: {{ dataSelected.director}}
+    </div>
+    <div class="itemsDetails">
+      <strong>Director: </strong> Producer Class: {{ dataSelected.producer}}
+    </div>
+    <div class="itemsDetails">
+      <strong>Release Date: </strong> {{ dataSelected.release_date | date: 'yyyy-MM-dd'}}
+    </div>
+    <div class="itemsDetails">
+      <strong>Episode ID: </strong> 4
+    </div>
+    <div class="itemsDetails">
+      <strong> Opening Crawl: </strong>
+
+      <p>{{ dataSelected.opening_crawl}}</p>
+    </div>
+
+  </div>
+  <div>
+    <button type="button" class="btn btn-primary" routerLink="/films">
+      <i class="fa fa-reply-all" aria-hidden="true"></i>
+      Back
+    </button>
+  </div>
+</div>
+
+<ng-template #existDataSelected>
+  <div class="alert alert-primary" role="alert">
+    Loading films details...!
+    <i class="fa fa-refresh fa-spin  fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+  </div>
+</ng-template>
